@@ -1,0 +1,355 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  overflow-x: hidden;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'paris';
+  src: url("../fonts/parisr.eot");
+  font-weight: bold;
+  src: url("webfont.eot?#iefix") format("embedded-opentype"), url("webfont.woff2") format("woff2"), url("../fonts/parisr.woff") format("woff"), url("../fonts/parisr.ttf") format("truetype"), url("../fonts/parisr.svg") format("svg");
+}
+
+/*FOOTER*/
+.tex-section:last-child {
+  height: 90vh;
+  background-color: #333;
+}
+
+.footerFeatures {
+  overflow-y: hidden;
+  height: 80px;
+}
+
+.footerFeatures img {
+  padding: 15px 0px 0px 10px;
+  cursor: pointer;
+}
+
+.footerFeatures ul {
+  list-style-type: none;
+  width: 100%;
+  height: 10vh;
+  overflow: hidden;
+  background-color: #111;
+}
+
+.footerFeatures li {
+  float: right;
+  border-right: 1px solid #bbb;
+  height: 10vh;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 22px 10px 0px 10px;
+  text-decoration: none;
+  font-size: 24px;
+  cursor: pointer;
+  font-family: 'poppins';
+}
+
+.footerFeatures li:hover {
+  background-color: white;
+  background-color: grey;
+}
+
+/* LOGIN CONTAINER NESTED */
+.login-container {
+  top: 0;
+  right: 0;
+  margin-right: 10px;
+  margin-top: 55px;
+  position: absolute;
+  float: right;
+  opacity: .6;
+  margin-bottom: 30px;
+}
+
+button {
+  width: 72px;
+  height: 48px;
+  padding: 4.5px 4px 4.5px 4px;
+  letter-spacing: .35em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: #FFFFFF;
+  background-color: Transparent;
+}
+
+input {
+  width: 72px;
+  height: 37px;
+  padding: 5px 10px;
+  border: 1px solid white;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  letter-spacing: .30em;
+  margin-left: 2px;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  background-color: Transparent;
+  border: 0.50px solid white;
+}
+
+/*HAMBURGUER MENU SECTION */
+.hamburger_toggle_menu {
+  position: absolute;
+  top: 47px;
+  left: 10%;
+  padding: 4px;
+  cursor: pointer;
+  opacity: .5;
+  z-index: 1;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.lines1, .lines2, .lines3 {
+  width: 50px;
+  height: 4px;
+  background-color: #FFFFFF;
+  margin: 3px;
+  color: #FFFFFF;
+  margin-left: 20px;
+}
+
+/* ROTATE LINES HAMBURGUER MENU*/
+.change {
+  color: black;
+}
+
+.change .lines1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  -ms-flex-transform: rotate(-45deg) translate(-9px, 6px);
+  -ms-flex-transform-flex-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .lines2 {
+  opacity: 0;
+}
+
+.change .lines3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+header {
+  overflow-x: hidden;
+}
+
+header .videoSet video {
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  width: 100vw;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -2;
+}
+
+/*NAVIGATION LINKS NESTED*/
+.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 90px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  opacity: .5;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  font-size: 30px;
+  letter-spacing: .35em;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  display: none;
+  z-index: 1;
+}
+
+.nav-links li {
+  margin-top: 80px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav-links li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  list-style: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+.nav-links li a:hover {
+  color: #FFFFFF;
+  font-family: paris;
+  font-size: 50px;
+  padding: 14px 0px 14px 4px;
+  font-weight: 900;
+}
+
+.overlay {
+  background: #236841;
+  height: 100vh;
+  opacity: .5;
+  z-index: -1;
+  position: relative;
+}
+
+/*------SECTION-------- */
+.container-sections {
+  opacity: 0.8;
+}
+
+.container-sections .tex-section {
+  height: 100vh;
+  color: orange;
+  background-color: grey;
+  margin: 5px;
+}
+
+.container-sections .tex-section .text-container {
+  background: #236841;
+  height: 450px;
+  margin: 10px  20px  5px 20px;
+  border-radius: 5%;
+  overflow-y: hidden;
+}
+
+.container-sections .tex-section .title-reference {
+  margin: 40px  0px 10px 35px;
+  font-size: 30px;
+  text-align: left;
+}
+
+.container-sections .tex-section .text-container1 {
+  background: #236841;
+  height: 440px;
+  margin: 9px  20px  5px 20px;
+  border-radius: 5%;
+  overflow: hidden;
+  padding: 13px;
+}
+
+.container-sections .tex-section .text-container2 {
+  background: #236841;
+  height: 580px;
+  margin: 2px  20px  5px 20px;
+  border-radius: 5%;
+  overflow: hidden;
+  padding: 13px;
+}
+
+.container-sections .tex-section .text-container2 .fa {
+  font-size: 50px;
+}
+
+.container-sections .tex-section .image-container {
+  background-color: #FFFFFF;
+  opacity: .8;
+  width: 100%;
+  border: ipx solid #000000;
+  overflow: hidden;
+}
+
+.container-sections .tex-section img {
+  width: 140px;
+  height: 140px;
+  border-radius: 23px 13px 13px 13px;
+  display: block;
+  padding-top: 20px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.container-sections .tex-section h1 {
+  font-size: 35px;
+  margin: 35px 0px 0px;
+  text-align: center;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+
+.container-sections .tex-section h2 {
+  padding: 40px 10px 0px 30px;
+  font-size: 30px;
+}
+
+.container-sections .tex-section p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  padding: 15px;
+  margin: 10px;
+  color: #FFFFFF;
+  line-height: 20px;
+  text-align: center;
+  display: inline-block;
+}
+
+.container-sections .tex-section ul {
+  color: #FFFFFF;
+  margin-top: 20px;
+  margin-left: 30px;
+  line-height: 20px;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.container-sections .tex-section i {
+  font-size: 40px;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.container-sections .spaceLine {
+  height: 4px;
+}
+/*# sourceMappingURL=style.css.map */
