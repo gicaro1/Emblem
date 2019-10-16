@@ -46,15 +46,14 @@ table {
   src: url("webfont.eot?#iefix") format("embedded-opentype"), url("webfont.woff2") format("woff2"), url("../fonts/parisr.woff") format("woff"), url("../fonts/parisr.ttf") format("truetype"), url("../fonts/parisr.svg") format("svg");
 }
 
-/*FOOTER*/
-.tex-section:last-child {
-  height: 90vh;
-  background-color: #333;
+@font-face {
+  font-family: 'popp';
+  src: url("../fonts/poppin.ttf") format("truetype");
 }
 
+/*FOOTER*/
 .footerFeatures {
   overflow-y: hidden;
-  height: 80px;
 }
 
 .footerFeatures img {
@@ -79,7 +78,7 @@ table {
   text-align: center;
   padding: 22px 10px 0px 10px;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 14px;
   cursor: pointer;
   font-family: 'poppins';
 }
@@ -93,45 +92,41 @@ table {
 .login-container {
   top: 0;
   right: 0;
-  margin-right: 10px;
+  margin: 10px 5px 0px 0px;
   margin-top: 55px;
   position: absolute;
-  float: right;
   opacity: .6;
-  margin-bottom: 30px;
+  width: 300px;
 }
 
+/*LOGIN CONTACT & ACCESIBILITY BUTTONS*/
+/* BUTTON LOGIN NESTED */
 button {
-  width: 72px;
+  float: right;
+  width: 74px;
   height: 48px;
-  padding: 4.5px 4px 4.5px 4px;
-  letter-spacing: .35em;
+  font-size: 10px;
+  text-align: center;
+  letter-spacing: .30em;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-family: 'popp';
   color: #FFFFFF;
   background-color: Transparent;
+  margin-right: 2px;
 }
 
-input {
-  width: 72px;
-  height: 37px;
-  padding: 5px 10px;
-  border: 1px solid white;
-  font-family: "Yanone Kaffeesatz", sans-serif;
-  letter-spacing: .30em;
-  margin-left: 2px;
-  font-family: "Yanone Kaffeesatz", sans-serif;
-  background-color: Transparent;
-  border: 0.50px solid white;
+button:nth-last-child(1) {
+  color: #FFFFFF;
+  width: 110px;
 }
 
 /*HAMBURGUER MENU SECTION */
 .hamburger_toggle_menu {
   position: absolute;
-  top: 47px;
-  left: 10%;
+  top: 57px;
+  left: 5%;
   padding: 4px;
   cursor: pointer;
   opacity: .5;
@@ -251,21 +246,21 @@ header .videoSet video {
 .container-sections .tex-section {
   height: 100vh;
   color: orange;
-  background-color: grey;
+  background-color: white;
   margin: 5px;
   overflow-y: hidden;
 }
 
 .container-sections .tex-section .text-container1 {
   background: #236841;
-  height: 400px;
+  height: 500px;
   margin: 10px  20px  0px 20px;
   border-radius: 5%;
 }
 
 .container-sections .tex-section .text-container2 {
   background: #236841;
-  height: 450px;
+  height: 500px;
   margin: -35px  20px  5px 20px;
   border-radius: 5%;
 }
@@ -276,8 +271,17 @@ header .videoSet video {
 
 .container-sections .tex-section .text-container3 {
   background: #236841;
-  height: 400px;
+  height: 500px;
   margin: -30px  20px  5px 30px;
+  border-radius: 5%;
+  overflow: hidden;
+  padding: 13px;
+}
+
+.container-sections .tex-section .text-container4 {
+  background: #236841;
+  height: 80vh;
+  margin: 30px  0px  5px 20px;
   border-radius: 5%;
   overflow: hidden;
   padding: 13px;
@@ -287,15 +291,6 @@ header .videoSet video {
   margin: 20px  0px -20px 30px;
   font-size: 30px;
   text-align: left;
-}
-
-.container-sections .tex-section .text-container4 {
-  background: #236841;
-  height: 560px;
-  margin: 30px  20px  5px 20px;
-  border-radius: 5%;
-  overflow: hidden;
-  padding: 13px;
 }
 
 .container-sections .tex-section .image-container {
@@ -350,13 +345,16 @@ header .videoSet video {
 }
 
 .container-sections .tex-section i {
-  font-size: 40px;
+  font-size: 90px;
   display: block;
   text-align: center;
   margin-top: 20px;
 }
 
 .container-sections .spaceLine {
+  width: 80vw;
+  margin: 0 auto;
+  border-bottom: 1px solid grey;
   height: 4px;
 }
 /*# sourceMappingURL=style.css.map */
