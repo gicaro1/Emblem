@@ -53,39 +53,35 @@ table {
 
 /*FOOTER*/
 .footerFeatures {
-  overflow-y: hidden;
+  position: relative;
+  width: 100%;
+  height: 8vh;
+  background-color: gray;
+  line-height: 60px;
+  font-family: 'poppins';
 }
 
 .footerFeatures img {
-  padding: 15px 0px 0px 10px;
+  text-align: center;
   cursor: pointer;
 }
 
 .footerFeatures ul {
   list-style-type: none;
-  width: 100%;
-  height: 10vh;
-  overflow: hidden;
-  background-color: #111;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+  color: white;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-right: 1px solid white;
+  vertical-align: middle;
 }
 
 .footerFeatures li {
-  float: right;
-  border-right: 1px solid #bbb;
-  height: 10vh;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 22px 10px 0px 10px;
-  text-decoration: none;
-  font-size: 14px;
-  cursor: pointer;
-  font-family: 'poppins';
-}
-
-.footerFeatures li:hover {
-  background-color: white;
-  background-color: grey;
+  display: inline;
 }
 
 /* LOGIN CONTAINER NESTED */
@@ -114,7 +110,7 @@ button {
   font-family: 'popp';
   color: #FFFFFF;
   background-color: Transparent;
-  margin-right: 2px;
+  margin-right: 12px;
 }
 
 button:nth-last-child(1) {
@@ -253,14 +249,14 @@ header .videoSet video {
 
 .container-sections .tex-section .text-container1 {
   background: #236841;
-  height: 500px;
+  height: 460px;
   margin: 10px  20px  0px 20px;
   border-radius: 5%;
 }
 
 .container-sections .tex-section .text-container2 {
   background: #236841;
-  height: 500px;
+  height: 450px;
   margin: -35px  20px  5px 20px;
   border-radius: 5%;
 }
@@ -271,7 +267,7 @@ header .videoSet video {
 
 .container-sections .tex-section .text-container3 {
   background: #236841;
-  height: 500px;
+  height: 440px;
   margin: -30px  20px  5px 30px;
   border-radius: 5%;
   overflow: hidden;
@@ -280,8 +276,8 @@ header .videoSet video {
 
 .container-sections .tex-section .text-container4 {
   background: #236841;
-  height: 80vh;
-  margin: 30px  0px  5px 20px;
+  height: 70vh;
+  margin: 30px  20px  5px 30px;
   border-radius: 5%;
   overflow: hidden;
   padding: 13px;
@@ -308,19 +304,20 @@ header .videoSet video {
   display: block;
   padding-top: 20px;
   margin: 0 auto;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .container-sections .tex-section h1 {
   font-size: 35px;
-  margin: 35px 0px 0px;
+  margin: 25px 0px 15px;
   text-align: center;
   line-height: 32px;
-  color: #FFFFFF;
+  color: black;
 }
 
 .container-sections .tex-section h2 {
   padding: 10px 0px 40px 0px;
+  letter-spacing: 2px;
   font-size: 30px;
 }
 
@@ -328,15 +325,23 @@ header .videoSet video {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   padding: 15px;
-  margin: 10px;
+  margin: 10px 0px -10px;
   color: #FFFFFF;
   line-height: 20px;
   text-align: center;
   display: inline-block;
 }
 
+.container-sections .tex-section p::first-letter {
+  font-size: 25px;
+  line-height: 30px;
+  color: orange;
+  font-weight: 900;
+}
+
 .container-sections .tex-section ul {
   color: #FFFFFF;
+  font-family: 'popp';
   margin-top: 20px;
   margin-left: 30px;
   line-height: 20px;
