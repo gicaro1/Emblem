@@ -253,42 +253,49 @@ header .videoSet video {
   color: orange;
   background-color: grey;
   margin: 5px;
-}
-
-.container-sections .tex-section .text-container {
-  background: #236841;
-  height: 450px;
-  margin: 10px  20px  5px 20px;
-  border-radius: 5%;
   overflow-y: hidden;
-}
-
-.container-sections .tex-section .title-reference {
-  margin: 40px  0px 10px 35px;
-  font-size: 30px;
-  text-align: left;
 }
 
 .container-sections .tex-section .text-container1 {
   background: #236841;
-  height: 440px;
-  margin: 9px  20px  5px 20px;
+  height: 400px;
+  margin: 10px  20px  0px 20px;
   border-radius: 5%;
-  overflow: hidden;
-  padding: 13px;
 }
 
 .container-sections .tex-section .text-container2 {
   background: #236841;
-  height: 580px;
-  margin: 2px  20px  5px 20px;
+  height: 450px;
+  margin: -35px  20px  5px 20px;
+  border-radius: 5%;
+}
+
+.container-sections .tex-section h2 {
+  margin: 30px  20px  5px 30px;
+}
+
+.container-sections .tex-section .text-container3 {
+  background: #236841;
+  height: 400px;
+  margin: -30px  20px  5px 30px;
   border-radius: 5%;
   overflow: hidden;
   padding: 13px;
 }
 
-.container-sections .tex-section .text-container2 .fa {
-  font-size: 50px;
+.container-sections .tex-section .title-reference {
+  margin: 20px  0px -20px 30px;
+  font-size: 30px;
+  text-align: left;
+}
+
+.container-sections .tex-section .text-container4 {
+  background: #236841;
+  height: 560px;
+  margin: 30px  20px  5px 20px;
+  border-radius: 5%;
+  overflow: hidden;
+  padding: 13px;
 }
 
 .container-sections .tex-section .image-container {
@@ -318,7 +325,7 @@ header .videoSet video {
 }
 
 .container-sections .tex-section h2 {
-  padding: 40px 10px 0px 30px;
+  padding: 10px 0px 40px 0px;
   font-size: 30px;
 }
 
