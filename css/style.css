@@ -110,7 +110,7 @@ button {
   font-family: 'popp';
   color: #FFFFFF;
   background-color: Transparent;
-  margin-right: 12px;
+  margin-right: 6px;
 }
 
 button:nth-last-child(1) {
@@ -195,7 +195,7 @@ header .videoSet video {
   position: absolute;
   font-size: 30px;
   letter-spacing: .35em;
-  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-family: 'popp';
   display: none;
   z-index: 1;
 }
@@ -214,16 +214,6 @@ header .videoSet video {
   list-style: none;
   color: #FFFFFF;
   cursor: pointer;
-  -webkit-transition: all 1s ease-out;
-  transition: all 1s ease-out;
-}
-
-.nav-links li a:hover {
-  color: #FFFFFF;
-  font-family: paris;
-  font-size: 50px;
-  padding: 14px 0px 14px 4px;
-  font-weight: 900;
 }
 
 .overlay {
@@ -249,7 +239,7 @@ header .videoSet video {
 
 .container-sections .tex-section .text-container1 {
   background: #236841;
-  height: 460px;
+  height: 300px;
   margin: 10px  20px  0px 20px;
   border-radius: 5%;
 }
@@ -262,7 +252,7 @@ header .videoSet video {
 }
 
 .container-sections .tex-section h2 {
-  margin: 30px  20px  5px 30px;
+  margin: 0px  20px  5px 30px;
 }
 
 .container-sections .tex-section .text-container3 {
@@ -276,7 +266,7 @@ header .videoSet video {
 
 .container-sections .tex-section .text-container4 {
   background: #236841;
-  height: 70vh;
+  height: 82vh;
   margin: 30px  20px  5px 30px;
   border-radius: 5%;
   overflow: hidden;
@@ -302,7 +292,7 @@ header .videoSet video {
   height: 140px;
   border-radius: 23px 13px 13px 13px;
   display: block;
-  padding-top: 20px;
+  padding-top: 5px;
   margin: 0 auto;
   padding-bottom: 10px;
 }
@@ -357,9 +347,139 @@ header .videoSet video {
 }
 
 .container-sections .spaceLine {
-  width: 80vw;
+  width: 95%;
   margin: 0 auto;
+  padding: 5px 0px 10px 0px;
   border-bottom: 1px solid grey;
-  height: 4px;
 }
+
+@media (max-device-width: 414px) {
+  .hamburger_toggle_menu {
+    top: 48px;
+    left: -10px;
+    padding: 15px;
+  }
+  .lines1, .lines2, .lines3 {
+    width: 70px;
+    height: 6px;
+  }
+  .container-sections .tex-section .text-container1 {
+    height: 470px;
+  }
+}
+
+/* ----------MEDIA QUERIES FOR PHONE UNDER 414 PIXELS*/
+@media (max-device-width: 414px) {
+  .hamburger_toggle_menu {
+    top: 48px;
+    left: -10px;
+    padding: 15px;
+  }
+  .hamburger_toggle_menu .lines1, .hamburger_toggle_menu .lines2, .hamburger_toggle_menu .lines3 {
+    width: 70px;
+    height: 6px;
+  }
+}
+
+@media (max-device-width: 375px) {
+  .hamburger_toggle_menu {
+    top: 44px;
+    left: -10px;
+    padding: 15px;
+  }
+  .hamburger_toggle_menu .lines1, .hamburger_toggle_menu .lines2, .hamburger_toggle_menu .lines3 {
+    width: 50px;
+    height: 5px;
+    margin-top: 6px;
+  }
+}
+
+/* MEDIA QUERIES FOR IPAD*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .hamburger_toggle_menu {
+    position: absolute;
+    top: 100px;
+    left: 10%;
+    padding: 15px;
+    opacity: .7;
+    z-index: 1;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .lines1, .lines2, .lines3 {
+    width: 100px;
+    height: 10px;
+    background-color: #FFFFFF;
+    margin: 4px;
+    color: #FFFFFF;
+    margin-left: 10px;
+  }
+  .nav-links {
+    margin-top: 160px;
+    font-size: 50px;
+    letter-spacing: .25em;
+    font-family: 'popp';
+    display: none;
+  }
+  .login-container {
+    top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 0px;
+    width: 500px;
+    position: absolute;
+  }
+  button {
+    width: 154px;
+    height: 78px;
+    font-size: 20px;
+  }
+  button:nth-last-child(1) {
+    color: #FFFFFF;
+    width: 210px;
+  }
+  .container-sections .text-container1 {
+    background: #236841;
+    height: auto;
+    margin: 10px  20px  0px 20px;
+    font-family: 'popp';
+  }
+  .container-sections .text-container2 {
+    background: #236841;
+    height: 450px;
+    margin: -35px  20px  5px 20px;
+    border-radius: 5%;
+  }
+  .container-sections h2 {
+    margin: 0px  20px  5px 30px;
+    font-family: 'popp';
+  }
+  .container-sections .text-container3 {
+    background: #236841;
+    height: 440px;
+    margin: -30px  20px  5px 30px;
+    border-radius: 5%;
+    overflow: hidden;
+    padding: 13px;
+  }
+  .container-sections .text-container4 {
+    background: #236841;
+    height: 82vh;
+    margin: 30px  20px  5px 30px;
+    border-radius: 5%;
+    overflow: hidden;
+    padding: 13px;
+  }
+  .container-sections .fa {
+    font-size: 50px;
+  }
+  .container-sections .title-reference {
+    margin: 20px  0px -20px 30px;
+    font-size: 30px;
+    text-align: left;
+  }
+}
+
+/* MEDIA QUERIES FOR PHONE UNDER 320 PIXELS iphone SE*/
 /*# sourceMappingURL=style.css.map */
