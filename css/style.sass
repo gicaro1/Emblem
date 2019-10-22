@@ -4,8 +4,6 @@
 @import ../login/_loginFeatures
 @import ../hamburguerMenu/_hamburguerFeatures
 
-$pale: #ffffff
-
 header
   overflow-x: hidden
   .nav
@@ -35,10 +33,7 @@ header
   letter-spacing: .35em
   font-family: 'popp'
   display: none
-  
   z-index: 1
-
-
 
   li
     margin-top: 80px
@@ -60,7 +55,7 @@ header
 .overlay
   background: $mainColor
   height: 100vh
-  opacity: .5
+  opacity: .3
   z-index: -1
   position: relative
 
@@ -69,131 +64,87 @@ header
 /*------SECTION-------- */
 
 .container-sections
-  opacity: 0.8
   
  
+
   .tex-section
     height: 100vh
-    color: orange
-    background-color: white
-    margin: 5px
     overflow-y: hidden
     
+  .image-container
+    height: 20vh
+   
     
-    .text-container1 
-      background: $mainColor
-      height: 300px
-      margin: 10px  20px  0px 20px
-      border-radius: 5%
-      
+  img 
+    height: 120px
+    width: 120px
+    display: block
+    margin: 0 auto
+    padding: 20px 0px 10px 0px
+    overflow-y: hidden
+ 
 
-    .text-container2 
-      background: $mainColor
-      height: 450px
-      margin: -35px  20px  5px 20px
-      border-radius: 5%
-     
-    h2 
-      margin: 0px  20px  5px 30px
+  .text-container 
+    height: 100vh
+    overflow-y: hidden
 
-      
-    .text-container3 
-      background: $mainColor
-      height: 440px
-      margin: -30px  20px  5px 30px
-      border-radius: 5%
-      overflow: hidden
-      padding: 13px
-      
-      
-    .text-container4  
-      
-      background: $mainColor
-      height: 82vh
-      margin: 30px  20px  5px 30px
-      border-radius: 5%
-      overflow: hidden
-      padding: 13px
-      
-      // .fa 
-      //   font-size: 50px
-    
-    
-    .title-reference
-      margin: 20px  0px -20px 30px
-      font-size: 30px
-      text-align: left
-      
-        
+  p 
+    margin: 20px 15px 15px 15px
+    font-size: 27px
+    text-align: center
+    overflow-y: hidden
+    opacity: 0.7
+   
 
-    
-    .image-container
-      background-color: $white-color
-      opacity: .8
-      width: 100%
-      border: ipx solid $black-color
-      overflow: hidden
-    img 
-      width: 140px
-      height: 140px
-      border-radius: 23px 13px 13px 13px
-      display: block
-      padding-top: 5px
-      margin: 0 auto
-      // opacity: .5 
-      padding-bottom: 10px
-    h1 
-      font-size: 35px
-      margin: 25px 0px 15px
-      text-align: center
-      line-height: 32px
+  h1 
+    font-size: 45px
+    text-align: center
+    padding: 10px
+    //   color: black
+    //    background-color: white
+
+  h2 
+    font-size: 30px
+    font-weight: 900
+    margin-left: 20px
+    text-align: center
+    color: #236841
+      
+  
+
+  p::first-letter
+    font-size: 25px;
+    line-height: -40px;
+    color: #236841
+    font-weight: 900
+    font-family: arial
+  section:nth-last-child(1)
+    p 
       color: black
+      margin-top: -90px
+      position: absolute
     h2 
-      padding: 10px 0px 40px 0px
-      // margin-bottom: 0px
-      letter-spacing: 2px
-      font-size: 30px
-      //color: $white-color 
-      //font-family: 'paris'
-      
-      
-    p
-      font-family: 'Poppins', sans-serif
-      font-size: 16px
-      padding: 15px 
-      margin: 10px 0px -10px
-      color: $white-color
-      line-height: 20px
-      text-align: center
-      display: inline-block
-    p::first-letter
-      font-size: 25px;
-      line-height: 30px;
-      color: orange
-      font-weight: 900
-      
-      
-    ul 
-      color: $white-color
-      font-family: 'popp'
-      margin-top: 20px
-      margin-left: 30px
-      line-height: 20px
-      font-size: 15px
-      font-weight: 100
-      
-    i 
-      font-size: 90px
-      display: block
-      text-align: center
-      margin-top: 20px
-      
+      color: #236841
+      position: absolute
+      margin-top: -130px
+      margin-left: 100px
+  
+    
+    
+  ul 
+    color: black
+    font-family: 'popp'
+    margin: 25px 10px 0px 30px
+    line-height: 20px
+    font-weight: bolder
+    margin-top: 20px
+     
     
   .spaceLine
-    width: 95%
-    margin: 0 auto
-    padding: 5px 0px 10px 0px
+    width: 90%
     border-bottom: 1px solid grey
+    opacity: 0.5
+    margin: 15px
     
    
 @media (max-device-width: 414px)
@@ -205,33 +156,21 @@ header
   .lines1, .lines2,.lines3
     width: 70px
     height: 6px
-
     
-  .container-sections
-    .tex-section
-      .text-container1 
-        height: 470px
-        
-
-  
+// @media only screen and(min-device-width:  414px) and (max-device-height:  667px)
+    
+ 
+     
 
 /* ----------MEDIA QUERIES FOR PHONE UNDER 414 PIXELS*/
 
    
-@media (max-device-width: 414px)
-  .hamburger_toggle_menu
-    top: 48px
-    left: -10px
-    padding: 15px
-  
-    .lines1, .lines2,.lines3
-      width: 70px
-      height: 6px   
+
 
 @media (max-device-width: 375px)
   .hamburger_toggle_menu
     top: 44px
-    left: -10px
+   
     padding: 15px
     .lines1, .lines2,.lines3
       width: 50px
@@ -239,7 +178,7 @@ header
       margin-top: 6px 
   
 
-/* MEDIA QUERIES FOR IPAD*/
+/* -------------MEDIA QUERIES FOR IPAD------------*/
 @media only screen and(min-device-width:  768px) and (max-device-width: 1024px)
   .hamburger_toggle_menu
     position: absolute
@@ -284,56 +223,115 @@ header
     width: 210px
   
   .container-sections
-  
     .tex-section
+      p
+        font-size: 36px;
+        text-align: center
+        margin: 20px 0px 22px 0px
+      p::first-letter
+        font-size: 45px;
+        line-height: 40px;
+      //  h2
+      //   margin: 10px  0px -20px 30px
+      //   font-size: 40px
+      //   text-align: left
+      //   color: black
       
-      // font-family: 'popp'
-
-    
-    .text-container1 
-      background: $mainColor
-      height: auto
-      margin: 10px  20px  0px 20px
-      font-family: 'popp'
       
-
-    .text-container2 
-      background: $mainColor
-      height: 450px
-      margin: -35px  20px  5px 20px
-      border-radius: 5%
+      .text-container1 
+      
+        // height: 800px
+        // padding: 25px  0px 0px 0px
      
-    h2 
-      margin: 0px  20px  5px 30px
-      font-family: 'popp'
+        // img 
+          // width: 90px
+          // height: 190px
+          // border-radius: 23px 13px 13px 13px
+          // display: block
+        // .fa 
+        //   font-size: 280px
+        //   margin-top: 20px
+      
 
-      
-    .text-container3 
-      background: $mainColor
-      height: 440px
-      margin: -30px  20px  5px 30px
-      border-radius: 5%
-      overflow: hidden
-      padding: 13px
-      
-      
-    .text-container4  
-      
-      background: $mainColor
-      height: 82vh
-      margin: 30px  20px  5px 30px
-      border-radius: 5%
-      overflow: hidden
-      padding: 13px
-      
-    .fa 
-      font-size: 50px
+      // .text-container2 
+      //   height: 800px
+      //   padding: 15px  0px 0px 0px  
     
-    .title-reference
-      margin: 20px  0px -20px 30px
-      font-size: 30px
-      text-align: left
+
+      // .text-container3
+      //   height: 800px
+      //   padding: 25px  0px 0px 0px
+
+      // .text-container4 
+      //   height: 82vh
+      //   margin: 0px  20px  5px 30px
+      //   padding: 13px
+      //   p 
+      //     padding-top: 29px
     
+
+      // h2
+      //   margin: 10px  0px -20px 30px
+      //   font-size: 40px
+      //   text-align: left
+      //   color: black
+
+      // .fa 
+      //   font-size: 80px
+      //   margin-top: 20px
+      // .image-container
+        
+        // width: 100%
+        // img 
+        //   width: 290px
+        //   height: 190px
+        //   border-radius: 23px 13px 13px 13px
+        //   display: block
+      
+      ul 
+      
+        margin-top: px
+        margin-left: 50px
+        font-size: 22px
+        font-weight: 100
+        line-height: 1.5
+    
+      .fa 
+        font-size: 160px
+        display:none
+     
+    
+   
+  .footerFeatures 
+    height: 8vh
+   
+  
+  
+    // background-color: gray
+   
+    // img 
+    
+    
+
+    ul
+       
+    
+     
+       
+
+    li
+ 
+     color: black
+     
+  
+    
+
+    a
+      font-family: 'poppins'
+      
+   
+     
+
 
 /* MEDIA QUERIES FOR PHONE UNDER 320 PIXELS iphone SE*/
 // 

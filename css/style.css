@@ -219,138 +219,92 @@ header .videoSet video {
 .overlay {
   background: #236841;
   height: 100vh;
-  opacity: .5;
+  opacity: .3;
   z-index: -1;
   position: relative;
 }
 
 /*------SECTION-------- */
-.container-sections {
-  opacity: 0.8;
-}
-
 .container-sections .tex-section {
   height: 100vh;
-  color: orange;
-  background-color: white;
-  margin: 5px;
   overflow-y: hidden;
 }
 
-.container-sections .tex-section .text-container1 {
-  background: #236841;
-  height: 300px;
-  margin: 10px  20px  0px 20px;
-  border-radius: 5%;
+.container-sections .image-container {
+  height: 20vh;
 }
 
-.container-sections .tex-section .text-container2 {
-  background: #236841;
-  height: 450px;
-  margin: -35px  20px  5px 20px;
-  border-radius: 5%;
-}
-
-.container-sections .tex-section h2 {
-  margin: 0px  20px  5px 30px;
-}
-
-.container-sections .tex-section .text-container3 {
-  background: #236841;
-  height: 440px;
-  margin: -30px  20px  5px 30px;
-  border-radius: 5%;
-  overflow: hidden;
-  padding: 13px;
-}
-
-.container-sections .tex-section .text-container4 {
-  background: #236841;
-  height: 82vh;
-  margin: 30px  20px  5px 30px;
-  border-radius: 5%;
-  overflow: hidden;
-  padding: 13px;
-}
-
-.container-sections .tex-section .title-reference {
-  margin: 20px  0px -20px 30px;
-  font-size: 30px;
-  text-align: left;
-}
-
-.container-sections .tex-section .image-container {
-  background-color: #FFFFFF;
-  opacity: .8;
-  width: 100%;
-  border: ipx solid #000000;
-  overflow: hidden;
-}
-
-.container-sections .tex-section img {
-  width: 140px;
-  height: 140px;
-  border-radius: 23px 13px 13px 13px;
+.container-sections img {
+  height: 120px;
+  width: 120px;
   display: block;
-  padding-top: 5px;
   margin: 0 auto;
-  padding-bottom: 10px;
+  padding: 20px 0px 10px 0px;
+  overflow-y: hidden;
 }
 
-.container-sections .tex-section h1 {
-  font-size: 35px;
-  margin: 25px 0px 15px;
+.container-sections .text-container {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.container-sections p {
+  margin: 20px 15px 15px 15px;
+  font-size: 27px;
   text-align: center;
-  line-height: 32px;
-  color: black;
+  overflow-y: hidden;
+  opacity: 0.7;
 }
 
-.container-sections .tex-section h2 {
-  padding: 10px 0px 40px 0px;
-  letter-spacing: 2px;
+.container-sections h1 {
+  font-size: 45px;
+  text-align: center;
+  padding: 10px;
+}
+
+.container-sections h2 {
   font-size: 30px;
-}
-
-.container-sections .tex-section p {
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  padding: 15px;
-  margin: 10px 0px -10px;
-  color: #FFFFFF;
-  line-height: 20px;
-  text-align: center;
-  display: inline-block;
-}
-
-.container-sections .tex-section p::first-letter {
-  font-size: 25px;
-  line-height: 30px;
-  color: orange;
   font-weight: 900;
-}
-
-.container-sections .tex-section ul {
-  color: #FFFFFF;
-  font-family: 'popp';
-  margin-top: 20px;
-  margin-left: 30px;
-  line-height: 20px;
-  font-size: 15px;
-  font-weight: 100;
-}
-
-.container-sections .tex-section i {
-  font-size: 90px;
-  display: block;
+  margin-left: 20px;
   text-align: center;
+  color: #236841;
+}
+
+.container-sections p::first-letter {
+  font-size: 25px;
+  line-height: -40px;
+  color: #236841;
+  font-weight: 900;
+  font-family: arial;
+}
+
+.container-sections section:nth-last-child(1) p {
+  color: black;
+  margin-top: -90px;
+  position: absolute;
+}
+
+.container-sections section:nth-last-child(1) h2 {
+  color: #236841;
+  position: absolute;
+  margin-top: -130px;
+  margin-left: 100px;
+}
+
+.container-sections ul {
+  color: black;
+  font-family: 'popp';
+  margin: 25px 10px 0px 30px;
+  line-height: 20px;
+  font-weight: bolder;
   margin-top: 20px;
 }
 
 .container-sections .spaceLine {
-  width: 95%;
-  margin: 0 auto;
-  padding: 5px 0px 10px 0px;
+  width: 90%;
   border-bottom: 1px solid grey;
+  opacity: 0.5;
+  margin: 15px;
 }
 
 @media (max-device-width: 414px) {
@@ -363,28 +317,12 @@ header .videoSet video {
     width: 70px;
     height: 6px;
   }
-  .container-sections .tex-section .text-container1 {
-    height: 470px;
-  }
 }
 
 /* ----------MEDIA QUERIES FOR PHONE UNDER 414 PIXELS*/
-@media (max-device-width: 414px) {
-  .hamburger_toggle_menu {
-    top: 48px;
-    left: -10px;
-    padding: 15px;
-  }
-  .hamburger_toggle_menu .lines1, .hamburger_toggle_menu .lines2, .hamburger_toggle_menu .lines3 {
-    width: 70px;
-    height: 6px;
-  }
-}
-
 @media (max-device-width: 375px) {
   .hamburger_toggle_menu {
     top: 44px;
-    left: -10px;
     padding: 15px;
   }
   .hamburger_toggle_menu .lines1, .hamburger_toggle_menu .lines2, .hamburger_toggle_menu .lines3 {
@@ -394,7 +332,7 @@ header .videoSet video {
   }
 }
 
-/* MEDIA QUERIES FOR IPAD*/
+/* -------------MEDIA QUERIES FOR IPAD------------*/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .hamburger_toggle_menu {
     position: absolute;
@@ -439,45 +377,33 @@ header .videoSet video {
     color: #FFFFFF;
     width: 210px;
   }
-  .container-sections .text-container1 {
-    background: #236841;
-    height: auto;
-    margin: 10px  20px  0px 20px;
-    font-family: 'popp';
+  .container-sections .tex-section p {
+    font-size: 36px;
+    text-align: center;
+    margin: 20px 0px 22px 0px;
   }
-  .container-sections .text-container2 {
-    background: #236841;
-    height: 450px;
-    margin: -35px  20px  5px 20px;
-    border-radius: 5%;
+  .container-sections .tex-section p::first-letter {
+    font-size: 45px;
+    line-height: 40px;
   }
-  .container-sections h2 {
-    margin: 0px  20px  5px 30px;
-    font-family: 'popp';
+  .container-sections .tex-section ul {
+    margin-top: px;
+    margin-left: 50px;
+    font-size: 22px;
+    font-weight: 100;
+    line-height: 1.5;
   }
-  .container-sections .text-container3 {
-    background: #236841;
-    height: 440px;
-    margin: -30px  20px  5px 30px;
-    border-radius: 5%;
-    overflow: hidden;
-    padding: 13px;
+  .container-sections .tex-section .fa {
+    font-size: 160px;
   }
-  .container-sections .text-container4 {
-    background: #236841;
-    height: 82vh;
-    margin: 30px  20px  5px 30px;
-    border-radius: 5%;
-    overflow: hidden;
-    padding: 13px;
+  .footerFeatures {
+    height: 8vh;
   }
-  .container-sections .fa {
-    font-size: 50px;
+  .footerFeatures li {
+    color: black;
   }
-  .container-sections .title-reference {
-    margin: 20px  0px -20px 30px;
-    font-size: 30px;
-    text-align: left;
+  .footerFeatures a {
+    font-family: 'poppins';
   }
 }
 
