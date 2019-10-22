@@ -88,18 +88,22 @@ table {
 .login-container {
   top: 0;
   right: 0;
-  margin: 10px 5px 0px 0px;
+  margin: 10px 0px 0px 0px;
   margin-top: 55px;
   position: absolute;
   opacity: .6;
-  width: 300px;
+  width: 320px;
+}
+
+.cont {
+  padding: 0px;
 }
 
 /*LOGIN CONTACT & ACCESIBILITY BUTTONS*/
 /* BUTTON LOGIN NESTED */
 button {
   float: right;
-  width: 74px;
+  width: 50px;
   height: 48px;
   font-size: 10px;
   text-align: center;
@@ -116,6 +120,10 @@ button {
 button:nth-last-child(1) {
   color: #FFFFFF;
   width: 110px;
+}
+
+button:nth-first-child {
+  background-color: red;
 }
 
 /*HAMBURGUER MENU SECTION */
@@ -239,8 +247,7 @@ header .videoSet video {
   width: 120px;
   display: block;
   margin: 0 auto;
-  padding: 20px 0px 10px 0px;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .container-sections .text-container {
