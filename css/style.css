@@ -169,23 +169,6 @@ button:nth-first-child {
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
-header {
-  overflow-x: hidden;
-}
-
-header .videoSet video {
-  height: 100vh;
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: absolute;
-  width: 100vw;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  z-index: -2;
-}
-
 /*NAVIGATION LINKS NESTED*/
 .nav-links {
   display: -webkit-box;
@@ -204,7 +187,6 @@ header .videoSet video {
   font-size: 30px;
   letter-spacing: .35em;
   font-family: 'popp';
-  display: none;
   z-index: 1;
 }
 
@@ -222,6 +204,23 @@ header .videoSet video {
   list-style: none;
   color: #FFFFFF;
   cursor: pointer;
+}
+
+header {
+  overflow-x: hidden;
+}
+
+header .videoSet video {
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  width: 100vw;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -2;
 }
 
 .overlay {
@@ -261,6 +260,7 @@ header .videoSet video {
   text-align: center;
   overflow-y: hidden;
   opacity: 0.7;
+  letter-spacing: 2px;
 }
 
 .container-sections h1 {
@@ -275,6 +275,7 @@ header .videoSet video {
   margin-left: 20px;
   text-align: center;
   color: #236841;
+  padding-bottom: 5px;
 }
 
 .container-sections p::first-letter {
